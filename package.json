@@ -1,0 +1,33 @@
+{
+  "name": "vitalclinic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "10.15.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix NewReactTempalte",
+    "local": "concurrently \"nodemon server.js\" \"npm start --prefix NewReactTempalte\"",
+    "dev": "concurrently \"npm run server\" \"npm start --prefix NewReactTempalte\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "expressjs": "^1.0.1",
+    "http-proxy-middleware": "^0.19.1",
+    "mongoose": "^5.4.19",
+    "multer": "^1.4.1",
+    "nodemailer": "^5.1.1",
+    "nodemailer-sendgrid": "^1.0.3",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "sendgrid": "^4.2.0"
+  }
+}
